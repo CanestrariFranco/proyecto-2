@@ -1,81 +1,74 @@
-/* ===================== */
-/* 1. RESET BÁSICO */
-/* ===================== */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===================== */
-/* 2. VARIABLES (colores) */
-/* ===================== */
-:root {
-    --color-principal: #2a9d8f;
-    --color-secundario: #264653;
-    --color-fondo: #f1f5f9;
-    --color-blanco: #ffffff;
-    --color-texto: #333;
-}
-
-/* ===================== */
-/* 3. ESTILO GENERAL */
-/* ===================== */
+/* Estilo general */
 body {
-    font-family: Arial, sans-serif;
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffe5e5; /* rojo muy claro */
+    color: #000; /* letras negras */
+    line-height: 1.6;
 }
 
-/* ===================== */
-/* 4. HEADER */
-/* ===================== */
-.header {
-    background-color: var(--color-secundario);
-    color: var(--color-blanco);
+/* Header */
+header {
+    background-color: #ff4d4d; /* rojo principal */
+    color: black;
     text-align: center;
     padding: 20px;
+    border-bottom: 3px solid #cc0000;
 }
 
-/* ===================== */
-/* 5. CONTENEDOR */
-/* ===================== */
-.container {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 10px;
+header h1 {
+    font-size: 2.2rem;
 }
 
-/* ===================== */
-/* 6. TARJETAS */
-/* ===================== */
-.card {
-    background-color: var(--color-blanco);
+/* Main */
+main {
     padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Secciones */
+section {
+    background-color: #ffffff;
     margin-bottom: 20px;
-    border-radius: 10px;
-
-    /* sombra suave */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    border-left: 5px solid #ff4d4d;
+    border-radius: 8px;
 }
 
-/* títulos */
-.card h2 {
-    color: var(--color-principal);
+/* Títulos */
+h2 {
     margin-bottom: 10px;
+    color: #cc0000;
 }
 
-/* listas */
-.card ul {
-    padding-left: 20px;
+/* Listas */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
-/* ===================== */
-/* 7. FOOTER */
-/* ===================== */
-.footer {
-    background-color: var(--color-secundario);
-    color: var(--color-blanco);
+ul li {
+    background-color: #ffcccc;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ff4d4d;
+}
+
+/* Footer */
+footer {
     text-align: center;
     padding: 15px;
+    background-color: #ff4d4d;
+    color: black;
+    margin-top: 20px;
+    border-top: 3px solid #cc0000;
 }
